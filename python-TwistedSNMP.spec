@@ -37,7 +37,6 @@ Requires:	%{name} = %{version}-%{release}
 
 %description doc
 Offline documentation for TwistedSNMP.
-written in Python.
 
 %description doc -l pl
 Dokumentacja offline do TwistedSNMP.
