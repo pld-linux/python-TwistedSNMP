@@ -1,0 +1,46 @@
+--- doc/pydoc/builddocs.py.orig	2004-06-21 15:08:20.574193984 +0200
++++ doc/pydoc/builddocs.py	2004-06-21 15:08:28.723955032 +0200
+@@ -1,4 +1,8 @@
+ """Script to automatically generate PyTable documentation"""
++
++import sys
++sys.path.append( "../../build/lib/" )
++
+ import pydoc2
+ 
+ if __name__ == "__main__":
+@@ -15,7 +19,6 @@
+ 
+ 	modules = [
+ 		'twistedsnmp',
+-		'pysnmp',
+ 		'__builtin__',
+ 	]	
+ 	pydoc2.PackageDocumentationGenerator(
+
+--- doc/pydoc/pydoc2.py.orig	2004-02-17 21:26:20.000000000 +0100
++++ doc/pydoc/pydoc2.py	2004-06-21 15:37:37.035171328 +0200
+@@ -17,15 +17,7 @@
+ 				(join(parts[:i+1], '.'), parts[i]))
+ 		linkedname = join(links + parts[-1:], '.')
+ 		head = '<big><big><strong>%s</strong></big></big>' % linkedname
+-		try:
+-			path = inspect.getabsfile(object)
+-			url = path
+-			if sys.platform == 'win32':
+-				import nturl2path
+-				url = nturl2path.pathname2url(path)
+-			filelink = '<a href="file:%s">%s</a>' % (url, path)
+-		except TypeError:
+-			filelink = '(built-in)'
++		filelink = '(compiled)'
+ 		info = []
+ 		if hasattr(object, '__version__'):
+ 			version = str(object.__version__)
+@@ -383,4 +375,4 @@
+ 		destinationDirectory = "z:\\temp",
+ 		exclusions = excludes,
+ 	).process ()
+-		
+\ Brak znaku nowej linii na koñcu pliku
++		
