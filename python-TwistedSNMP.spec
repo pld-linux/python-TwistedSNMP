@@ -5,7 +5,7 @@ Summary:	Set of implementations of SNMP protocol for Twisted networking framewor
 Summary(pl):	Zbiór implementacji protoko³u SNMP dla Twisted
 Name:		python-%{module}
 Version:	0.2.10
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/twistedsnmp/%{module}-%{version}.tar.gz
