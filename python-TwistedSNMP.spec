@@ -2,7 +2,7 @@
 %include	/usr/lib/rpm/macros.python
 %define 	module	TwistedSNMP
 
-Summary:	Set of implementation of SNMP protocol for Twisted networking framework
+Summary:	Set of implementations of SNMP protocol for Twisted networking framework
 Summary(pl):	Zbiór implementacji protoko³u SNMP dla Twisted
 Name:		python-%{module}
 Version:	0.2.9
