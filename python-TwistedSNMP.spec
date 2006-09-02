@@ -12,10 +12,10 @@ Source0:	http://dl.sourceforge.net/twistedsnmp/%{module}-%{version}.tar.gz
 # Source0-md5:	b82c7d09f64b68b0cb947b359d849f44
 Patch0:		%{name}-build-doc.patch
 URL:		http://twistedsnmp.sourceforge.net/
-Requires:	python-Twisted >= 1.3
-Requires:	python-pysnmp => 3.0
 BuildRequires:	pydoc
 BuildRequires:	python-devel >= 2.2
+Requires:	python-Twisted >= 1.3
+Requires:	python-pysnmp => 3.0
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -82,10 +82,10 @@ python setup.py install \
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
 
 # Utilities
-cp -ar utilities/*.py $RPM_BUILD_ROOT%{_datadir}/%{module}
+cp -a utilities/*.py $RPM_BUILD_ROOT%{_datadir}/%{module}
 
 # Examples
-cp -ar test/*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a test/*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a doc/simpleexample.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 # Cleanups
