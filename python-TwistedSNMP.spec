@@ -2,7 +2,7 @@
 %define 	module	TwistedSNMP
 
 Summary:	Set of implementations of SNMP protocol for Twisted networking framework
-Summary(pl):	Zbiór implementacji protoko³u SNMP dla Twisted
+Summary(pl.UTF-8):   ZbiÃ³r implementacji protokoÅ‚u SNMP dla Twisted
 Name:		python-%{module}
 Version:	0.2.13
 Release:	1
@@ -24,45 +24,45 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 TwistedSNMP is a set of SNMP protocol implementations for Python's
 Twisted Matrix networking framework using the PySNMP project.
 
-%description -l pl
-TwistedSNMP jest zbiorem implementacji protoko³u SNMP dla Twisted,
-u¿ywaj±cym bibliotek z projektu PySNMP.
+%description -l pl.UTF-8
+TwistedSNMP jest zbiorem implementacji protokoÅ‚u SNMP dla Twisted,
+uÅ¼ywajÄ…cym bibliotek z projektu PySNMP.
 
 %package doc
 Summary:	Documentation for TwistedSNMP
-Summary(pl):	Dokumentacja do TwistedSNMP
+Summary(pl.UTF-8):   Dokumentacja do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description doc
 Offline documentation for TwistedSNMP.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja offline do TwistedSNMP.
 
 %package examples
 Summary:	Example programs for TwistedSNMP
-Summary(pl):	Programy przyk³adowe do TwistedSNMP
+Summary(pl.UTF-8):   Programy przykÅ‚adowe do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
 This package contains example programs for TwistedSNMP.
 
-%description examples -l pl
-Ten pakiet zawiera przyk³adowe programy dla TwistedSNMP.
+%description examples -l pl.UTF-8
+Ten pakiet zawiera przykÅ‚adowe programy dla TwistedSNMP.
 
 %package utils
 Summary:	Utility scripts for TwistedSNMP
-Summary(pl):	Skrypty narzêdziowe do TwistedSNMP
+Summary(pl.UTF-8):   Skrypty narzÄ™dziowe do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description utils
 This package contains utility scripts for TwistedSNMP.
 
-%description utils -l pl
-Ten pakiet zawiera skrypty narzêdziowe do TwistedSNMP.
+%description utils -l pl.UTF-8
+Ten pakiet zawiera skrypty narzÄ™dziowe do TwistedSNMP.
 
 %prep
 %setup -q -n %{module}-%{version}
