@@ -2,7 +2,7 @@
 %define 	module	TwistedSNMP
 
 Summary:	Set of implementations of SNMP protocol for Twisted networking framework
-Summary(pl.UTF-8):   Zbiór implementacji protokołu SNMP dla Twisted
+Summary(pl.UTF-8):	Zbiór implementacji protokołu SNMP dla Twisted
 Name:		python-%{module}
 Version:	0.2.13
 Release:	1
@@ -30,7 +30,7 @@ używającym bibliotek z projektu PySNMP.
 
 %package doc
 Summary:	Documentation for TwistedSNMP
-Summary(pl.UTF-8):   Dokumentacja do TwistedSNMP
+Summary(pl.UTF-8):	Dokumentacja do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -42,7 +42,7 @@ Dokumentacja offline do TwistedSNMP.
 
 %package examples
 Summary:	Example programs for TwistedSNMP
-Summary(pl.UTF-8):   Programy przykładowe do TwistedSNMP
+Summary(pl.UTF-8):	Programy przykładowe do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -54,7 +54,7 @@ Ten pakiet zawiera przykładowe programy dla TwistedSNMP.
 
 %package utils
 Summary:	Utility scripts for TwistedSNMP
-Summary(pl.UTF-8):   Skrypty narzędziowe do TwistedSNMP
+Summary(pl.UTF-8):	Skrypty narzędziowe do TwistedSNMP
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
