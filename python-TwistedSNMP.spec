@@ -75,9 +75,7 @@ python setup.py build_ext
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{py_sitescriptdir},%{_datadir}/%{module},%{_examplesdir}/%{name}-%{version}}
 
-python setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py_install
 
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
 
