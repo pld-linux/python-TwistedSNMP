@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/twistedsnmp/%{module}-%{version}.tar.gz
 # Source0-md5:	b82c7d09f64b68b0cb947b359d849f44
 Patch0:		%{name}-build-doc.patch
 URL:		http://twistedsnmp.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	pydoc
 BuildRequires:	python-devel >= 2.2
 Requires:	python-Twisted >= 1.3
