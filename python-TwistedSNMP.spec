@@ -67,7 +67,7 @@ Ten pakiet zawiera skrypty narzędziowe do TwistedSNMP.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 python setup.py build_ext
